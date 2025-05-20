@@ -163,8 +163,9 @@
     </div>
 
 <script>
-    const API_URL_UPLOAD = 'http://localhost:5050/process_image'; // Dành cho upload file
-    const API_URL_FROM_URL = 'http://localhost:5050/process_image_from_url'; // Endpoint mới cho URL
+    const RENDER_BASE_URL = 'https://anpr-vietnam.onrender.com'; // <-- URL Render
+    const API_URL_UPLOAD = RENDER_BASE_URL + '/process_image';
+    const API_URL_FROM_URL = RENDER_BASE_URL + '/process_image_from_url';
 
     // Các phần tử DOM để cập nhật (giữ nguyên)
     const originalUploadedImage = document.getElementById('originalUploadedImage');
