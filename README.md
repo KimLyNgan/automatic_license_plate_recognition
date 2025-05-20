@@ -50,7 +50,8 @@ Hướng dẫn cài đặt và chạy
 Clone Repository:
 
 git clone https://github.com/KimLyNgan/automatic_license_plate_recognition.git
-automatic_license_plate_recognition
+
+cd automatic_license_plate_recognition
 
 Tạo môi trường ảo (khuyên dùng):
 
