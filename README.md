@@ -115,3 +115,5 @@ Ghi chú triển khai (Deploy)
 Procfile (web: gunicorn app:app) được cung cấp để hướng dẫn Render cách khởi động ứng dụng.
 
 Các mô hình AI được tải một lần khi ứng dụng khởi động để tối ưu hiệu suất.
+
+Update lại URL cho Render Deployment
