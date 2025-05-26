@@ -53,14 +53,6 @@ git clone https://github.com/KimLyNgan/automatic_license_plate_recognition.git
 
 cd automatic_license_plate_recognition
 
-Tạo môi trường ảo (khuyên dùng):
-
-python -m venv .venv
-# Trên Windows
-.venv\Scripts\activate
-# Trên macOS/Linux
-source .venv/bin/activate
-
 Cài đặt các thư viện Python:
 
 pip install -r requirements.txt
@@ -69,7 +61,7 @@ pip install -r requirements.txt
 
 Đặt các file mô hình ONNX:
 
-Tải hai file mô hình ONNX của bạn (best_new.onnx và kytubiensoxe.onnx).
+Tải hai file mô hình ONNX (best_new.onnx và kytubiensoxe.onnx).
 
 Đặt chúng vào thư mục models/ trong project của bạn.
 
@@ -82,8 +74,6 @@ automatic_license_plate_recognition/
 Chạy ứng dụng Flask:
 
 gunicorn app:app -b 0.0.0.0:5050
-# Hoặc nếu bạn đang trong giai đoạn phát triển và muốn debug:
-# python app.py
 
 Ứng dụng sẽ chạy trên http://0.0.0.0:5050/.
 
@@ -115,5 +105,3 @@ Ghi chú triển khai (Deploy)
 Procfile (web: gunicorn app:app) được cung cấp để hướng dẫn Render cách khởi động ứng dụng.
 
 Các mô hình AI được tải một lần khi ứng dụng khởi động để tối ưu hiệu suất.
-
-Update lại URL cho Render Deployment
